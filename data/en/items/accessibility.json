@@ -42,7 +42,7 @@
     "tags": ["all", "best practices"]
   },
   {
-    "title": "Specific HTML5 input types are used",
+    "title": "Specific HTML5 input types (e.g. text, number, date) are used",
     "priority": "Medium",
     "description": "This is especially important for mobile devices that show customized keypads and widgets for different types.",
     "documentation": [

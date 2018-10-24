@@ -9,21 +9,11 @@ block main
   //- _items is in the JSON injected in the view with gulp-data (called _project.json)
   .s-main__section.s-main__checklist
 
-    if _items !== undefined
-
-      +checklist-section({
-        dataSection: _items.head,
-        sectionTitle: "Head"
-      })
+    if _items !== undefined 
 
       +checklist-section({
         dataSection: _items.html,
         sectionTitle: "HTML"
-      })
-
-      +checklist-section({
-        dataSection: _items.webfonts,
-        sectionTitle: "Webfonts"
       })
 
       +checklist-section({

@@ -60,11 +60,5 @@
       }
     ],
     "tags": ["all", "images"]
-  },
-  {
-    "title": "Lazy loading",
-    "priority": "Medium",
-    "description": "Images are lazyloaded (A noscript fallback is always provided).",
-    "tags": ["all", "images", "performance"]
   }
 ]
