@@ -1,14 +1,34 @@
 [
   {
-    "title": "Responsive Web Design",
+    "title": "Nesting and specificity",
     "priority": "High",
-    "description": "The website is using responsive web design.",
+    "description": "Component nesting is kept as low as possible (no more than 4).",
     "tags": ["all", "css"]
   },
   {
-    "title": "CSS Print",
+    "title": "Context vs component / element styles",
+    "priority": "High",
+    "description": "Implementation styles are based on context, visual styles are based on component.",
+    "detail": "Aesthetic changes should be modifiers on the root component (e.g. .c-button--rounded). Implementation/layout changes should be made on the parent component (e.g. .c-site-header { .c-button { float:right; } })",
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "Content driven media queries",
+    "priority": "High",
+    "description": "A media query should simply be added when the content could be better presented, not to suit a device.",
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "Content agnostic class names",
     "priority": "Medium",
-    "description": "A print stylesheet is provided and is correct on each page.",
+    "description": "Component class names should not be tied to the content inside the component.",
+    "detail": "For example using the the class name welcome_message would not be ideal. As that layout / component could be used elsewhere for other purposes a more appropriate class name would be message.",
+    "tags": ["all", "css"]
+  },
+  {
+    "title": "Avoid use of IDs",
+    "priority": "High",
+    "description": "IDs have the highest specificity of any CSS selector and as a result they cause issue with overwriting styles in the cascade.",
     "tags": ["all", "css"]
   },
   {
@@ -54,5 +74,11 @@
     "priority": "High",
     "description": "All pages were tested on several browsers (Safari, Firefox, Chrome, Internet Explorer, EDGE...)",
     "tags": ["all", "css", "testing"]
+  },
+  {
+    "title": "Print styles",
+    "priority": "Low",
+    "description": "A print stylesheet is provided and is correct on each page.",
+    "tags": ["all", "css"]
   }
 ]
