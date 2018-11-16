@@ -7,15 +7,12 @@ include ../mixins/mixins
 
 doctype html
 <!-- Doctype HTML5 -->
-html.no-js(lang=translation.SITE_LANGUAGE, dir=translation.SITE_DIRECTION)
+html(lang=translation.SITE_LANGUAGE, dir=translation.SITE_DIRECTION)
   head
 
     //- Include the HEAD of the page
     include head
   body
-
-    //- Scripts needed to be load just after the body
-    include before-scripts
 
     //- Website wrapper
     .page-wrapper
@@ -27,4 +24,4 @@ html.no-js(lang=translation.SITE_LANGUAGE, dir=translation.SITE_DIRECTION)
           block main
 
     //- Scripts loading
-    include after-scripts
+    script(src="/scripts/app.bundle.js" async)
