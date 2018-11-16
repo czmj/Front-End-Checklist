@@ -10,14 +10,12 @@
 @import 'utilities/utilities';
 
 // General styling using DOM element selectors
-@import 'base/fonts';
 @import 'base/icons';
 @import 'base/generic';
 @import 'base/headings';
 @import 'base/form';
 @import 'base/media';
 @import 'base/links';
-@import 'base/typography';
 
 // Layout
 @import 'layout/page';
@@ -31,7 +29,6 @@
 @import 'components/c-checklist';
 @import 'components/c-dropdown';
 @import 'components/c-tools';
-@import 'components/c-list';
 @import 'components/c-nav';
 @import 'components/c-progress';
 @import 'components/c-notation';

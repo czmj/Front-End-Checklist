@@ -92,21 +92,12 @@ class Dropdown {
         eachItem.setAttribute('data-item-dropdown', 'close');
         instance.removeCode(eachItem);
         instance.dropdownIcon(el.button);
-        gtag('event', 'close-dropdown', {
-          'event_category': 'Click',
-          'event_label': 'Close dropdown'
-        });
       } else if (ariaStatus === 'close') {
         eachItem.setAttribute('data-item-dropdown', 'open');
         instance.dropdownIcon(el.button);
         instance.loadCode(eachItem);
 
         new Ui().lazyLoadImg(eachItem);
-
-        gtag('event', 'open-dropdown', {
-          'event_category': 'Click',
-          'event_label': 'Open dropdown'
-        });
       }
       else {}
     }
