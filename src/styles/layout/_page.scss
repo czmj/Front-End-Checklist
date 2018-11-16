@@ -9,11 +9,10 @@ $logo-width: 150px;
   grid-template-columns: auto;
   grid-template-areas:
     'header'
-    'main'
-    'footer';
+    'main';
 
   @include mq('lap-and-up') {
-    grid-template-areas: 'header header header' 'main main main' 'footer footer footer';
+    grid-template-areas: 'header header header' 'main main main';
   }
 
   .page-header {
@@ -27,10 +26,6 @@ $logo-width: 150px;
       display: grid;
       grid-template-columns: auto 150px 960px 150px auto;
     }
-  }
-
-  .page-footer {
-    grid-area: footer;
   }
 }
 
