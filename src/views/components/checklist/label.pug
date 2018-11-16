@@ -18,7 +18,7 @@
 
       if item.documentation
         .c-checklist__documentation
-          h4= translation.SECTION_DOCUMENTATION
+          h4= content.SECTION_DOCUMENTATION
           ul.documentation__list
             each documentation, i in item.documentation
               li
@@ -28,7 +28,7 @@
 
       if item.tools
         .c-checklist__tools
-          h4= translation.SECTION_TOOL
+          h4= content.SECTION_TOOL
           ul.documentation__list
             each tool, i in item.tools
               li
@@ -37,7 +37,7 @@
 
       if item.video
         .c-checklist__video
-          h4= translation.SECTION_VIDEO
+          h4= content.SECTION_VIDEO
           ul.video__list
             each video, i in item.video
               li

@@ -29,19 +29,19 @@
         span.js-notation-checked 0
         |/
         span.js-notation-total= totalHigh.length
-        | &nbsp;#[=translation.HIGH_CHECKED]
+        | &nbsp;#[=content.HIGH_CHECKED]
       li.c-notation__details__item.js-detail-medium
         +svg-icon.icon.icon--small.icon-priority--medium(data-icon-name='bullet')
         span.js-notation-checked 0
         |/
         span.js-notation-total= totalMedium.length
-        | &nbsp;#[=translation.MEDIUM_CHECKED]
+        | &nbsp;#[=content.MEDIUM_CHECKED]
       li.c-notation__details__item.js-detail-low
         +svg-icon.icon.icon--small.icon-priority--low(data-icon-name='bullet')
         span.js-notation-checked 0
         |/
         span.js-notation-total= totalLow.length
-        | &nbsp;#[=translation.LOW_CHECKED]
+        | &nbsp;#[=content.LOW_CHECKED]
 
   .c-notation__box
     #js-notation.c-notation__item(data-notation="0")
@@ -51,4 +51,4 @@
 .c-notation__generate
   button.button.--fill.--large.js-print
     +svg-icon.icon.icon-print(data-icon-name='print')
-    | #[=translation.form.BUTTON_GENERATE_PRINT]
+    | #[=content.form.BUTTON_GENERATE_PRINT]
